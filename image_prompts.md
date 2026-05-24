@@ -1,103 +1,103 @@
-# Khaldoun Image Generation Prompts - Saydnaya Presentation
+# Khaldoun Image Generation Prompts - Syrian Identity Presentation
 
-This file contains the detailed image generation prompts for the 10 slides of the Saydnaya interactive presentation, following the **Khaldoun Cinematic Documentary** style rules.
+This file contains the detailed image generation prompts for the slides of the "Syrian Identity - Not Imported" interactive presentation, following the **Khaldoun Cinematic Documentary** style rules.
 
 ---
 
 ## Slide 1: Opening (Hero Image)
-* **File Path:** `images/sednaya_hero.png`
-* **Purpose:** Set the dark, heavy, documentary atmosphere for the presentation.
+* **File Path:** `images/syria_hero.png`
+* **Purpose:** Set the core visual anchor for the true, rooted identity.
 * **Prompt:**
 ```text
-A cinematic, haunting view of the entrance and watchtowers of Sednaya military prison in Syria, under a heavy grey overcast sky, cold foggy dawn, dim blue ambient lighting, weathered concrete walls with forensic textures, dual-source lighting (cold foggy morning light + a single warm yellow security searchlight cutting through the fog), dark charcoal, steel grey, and pale yellow, wide-angle 24mm lens, low-angle shot, hyper-realistic documentary photography style, ARRI Alexa look, natural film grain, moral witness aesthetic, small signature "@KhaldounAAkramah" embedded in the bottom-right textured surface --ar 16:9 --style raw --q 2 --chaos 5
+A hyper-realistic cinematic documentary shot of a centuries-old, rugged olive tree growing out of cracked, rocky earth on a hillside in the Levant, cold foggy dawn, dual-source lighting (cold ambient blue morning light + warm practical glow from a distant village), dark premium visual tone, forensic bark texture, profound stillness, ARRI Alexa Mini, 35mm prime, f/2.8, deep shadows, moral witness aesthetic, small signature "@KhaldounAAkramah" embedded in the rock texture at the bottom right --ar 16:9 --style raw --q 2 --chaos 5
 ```
 
 ---
 
-## Slide 2: Thesis
-* **File Path:** `images/sednaya_thesis.png`
-* **Purpose:** Visual metaphor of confinement and memory.
+## Slide 2: The Hundred Years Struggle
+* **File Path:** `images/syria_struggle.png`
+* **Purpose:** Represent the century-long attempt to erase and rewrite the identity.
 * **Prompt:**
 ```text
-A high-contrast macro close-up of aged, cold steel cell bars, with condensation drops running down, dimly illuminated by a faint morning light, deep shadows, dual-source lighting (cool blue ambient + warm soft incandescent lamp light), forensic metal texture, Levantine authenticity, ARRI Alexa Mini, 50mm prime, small signature "@KhaldounAAkramah" subtly engraved in the corner metal --ar 16:9 --style raw --q 2 --chaos 5
+An extreme macro close-up of a weathered, ancient stone wall in Damascus with layers of torn, old paper posters and decaying paint, forensic texture, peeling layers revealing older stones beneath, cinematic documentary style, cold ambient light with a single warm beam grazing the surface, dust particles in the air, no literal text visible, small signature "@KhaldounAAkramah" subtly engraved in the corner stone --ar 16:9 --style raw --q 2 --chaos 5
 ```
 
 ---
 
-## Slide 3: What is Saydnaya?
-* **File Path:** `images/sednaya_structure.png`
-* **Purpose:** Archival structural view of the prison.
+## Slide 3: Imported Ideas (The Theorists)
+* **File Path:** `images/syria_imported.png`
+* **Purpose:** Metaphor for the ready-made, imported solutions that failed to fit.
 * **Prompt:**
 ```text
-An aerial top-down symmetrical view of the distinctive three-bladed Y-shape of Sednaya prison, obscured by thick grey fog, dark concrete surfaces, high contrast, documentary style, cool ambient light, forensic texture, small signature "@KhaldounAAkramah" integrated into the corner grid --ar 16:9 --style raw --q 2 --chaos 5
+A cinematic documentary shot of a dark, dusty archive room filled with stacks of identical, anonymous grey cardboard boxes and sealed containers, cold institutional lighting, a single warm bulb illuminating a closed box in the center, heavy shadows, forensic texture, ARRI Alexa look, representing imported ideas, small signature "@KhaldounAAkramah" integrated into the shadow of the box --ar 16:9 --style raw --q 2 --chaos 5
 ```
 
 ---
 
-## Slide 4: Memory and Testimony
-* **File Path:** `images/sednaya_testimony.png`
-* **Purpose:** Illustrate the vacancy and silence of testimony.
+## Slide 4: The Deformed Entity
+* **File Path:** `images/syria_deformed.png`
+* **Purpose:** Metaphor for the loss of true reflection and identity confusion.
 * **Prompt:**
 ```text
-A documentary shot of an empty wooden chair in a dark, empty interrogation room, a single warm bulb hanging directly above casting dramatic shadows, dust particles visible in the air, cold concrete floor, cold blue ambient backlight, small signature "@KhaldounAAkramah" on the bottom floor shadows --ar 16:9 --style raw --q 2 --chaos 5
+An extreme close-up of a large, cracked antique mirror leaning against a dark, weathered concrete wall, the reflection is fragmented and distorted, cold blue ambient light, dramatic shadows, forensic dust texture, cinematic realism, conveying a sense of lost identity, no faces shown, small signature "@KhaldounAAkramah" integrated into the cracked glass texture in the lower corner --ar 16:9 --style raw --q 2 --chaos 5
 ```
 
 ---
 
-## Slide 5: Absence and Loss
-* **File Path:** `images/sednaya_absence.png`
-* **Purpose:** Convey the presence of the missing through simple objects.
+## Slide 5: The Revolution and the Original Question
+* **File Path:** `images/syria_revolution.png`
+* **Purpose:** The moment of awakening and returning to the root question: "Who are we?"
 * **Prompt:**
 ```text
-A macro focus on an old, worn wool blanket left folded on a cold concrete floor, a single shaft of dawn light cutting through a high, barred window, dust motes floating in the light, forensic texture, dark charcoal and cold steel tones, small signature "@KhaldounAAkramah" embedded on the concrete --ar 16:9 --style raw --q 2 --chaos 5
+A cinematic wide-angle shot of a heavily destroyed Syrian city street in ruins, but with a powerful, brilliant shaft of warm golden sunlight breaking through the dark, heavy clouds, illuminating a single intact doorway in the rubble, extreme contrast, dual-source lighting (cold shadows + warm sunbeam), dust motes dancing in the light, documentary realism, small signature "@KhaldounAAkramah" lightly carved on a piece of rubble --ar 16:9 --style raw --q 2 --chaos 5
 ```
 
 ---
 
-## Slide 6: Visual Symbols
-* **File Path:** `images/sednaya_scratches.png`
-* **Purpose:** Highlight markings of passing time left by prisoners.
+## Slide 6: Metaphor Break (Image-Only Slide)
+* **File Path:** `images/syria_collapse.png`
+* **Purpose:** Visual silence representing the collapse of lies.
 * **Prompt:**
 ```text
-An extreme macro close-up of a rough, weathered concrete cell wall with hand-carved tally marks and names scratched into the surface, dust and paint decay visible, lit from the side by a warm light to emphasize the depth of the scratches, small signature "@KhaldounAAkramah" lightly carved in the lower corner --ar 16:9 --style raw --q 2 --chaos 5
+An extreme macro focus on a pile of crumbling, dried clay and ash on a dark stone surface, collapsing under its own weight, a single ray of harsh, cold light cutting across the texture, extreme forensic detail, cinematic negative space, conveying the death of imported illusions, small signature "@KhaldounAAkramah" embedded in the dark stone --ar 16:9 --style raw --q 2 --chaos 5
 ```
 
 ---
 
-## Slide 7: Metaphor Break (Image-Only Slide)
-* **File Path:** `images/sednaya_door.png`
-* **Purpose:** Symbolic threshold of confinement.
+## Slide 7: The New Birth (Syria)
+* **File Path:** `images/syria_rebirth.png`
+* **Purpose:** The birth of the new Syria from the rubble, standing on its own roots.
 * **Prompt:**
 ```text
-An extreme close-up of a heavy, rusted iron cell door peephole and sliding hatch, closed, with rust scale and weathered texture, dark shadows, cold blue ambient light with a warm glow leaking through the peephole, small signature "@KhaldounAAkramah" integrated into the rusted metal texture --ar 16:9 --style raw --q 2 --chaos 5
+A hyper-realistic cinematic shot of a single, vibrant green sprout breaking through a crack in heavy, grey concrete rubble, soft warm morning sunlight gently illuminating the small leaves against the cold, dark background, poetic atmosphere, shallow depth of field, 50mm lens, dual-source lighting, small signature "@KhaldounAAkramah" integrated into the shadow of the rubble --ar 16:9 --style raw --q 2 --chaos 5
 ```
 
 ---
 
-## Slide 8: Accountability and Justice
-* **File Path:** `images/sednaya_dossier.png`
-* **Purpose:** Legal and forensic documentation style.
+## Slide 8: The True Heritage
+* **File Path:** `images/syria_heritage.png`
+* **Purpose:** Building the identity on authentic culture, religion, and memory.
 * **Prompt:**
 ```text
-A formal archives style close-up of a weathered manila folder labeled in Arabic script, lying on a dark wooden table, illuminated by a single warm desk lamp, with cold blue moonlight coming from a window in the background, small signature "@KhaldounAAkramah" in the lower corner --ar 16:9 --style raw --q 2 --chaos 5
+A close-up of hands (weathered, working hands) carefully placing a carved, ancient basalt stone on top of another, building a foundation, warm, golden hour practical light from the side, cold blue ambient shadows, forensic skin and stone texture, Levantine authenticity, ARRI Alexa Mini, small signature "@KhaldounAAkramah" subtly engraved in the lower stone --ar 16:9 --style raw --q 2 --chaos 5
 ```
 
 ---
 
-## Slide 9: Lessons and Closing
-* **File Path:** `images/sednaya_dawn.png`
-* **Purpose:** Light breaking into darkness, memory as a shield.
+## Slide 9: Closing (The Covenant)
+* **File Path:** `images/syria_covenant.png`
+* **Purpose:** Syria will no longer be an experiment for others.
 * **Prompt:**
 ```text
-A wide-angle view from inside a dark cell looking out through high-barred window openings towards a cold, clear blue dawn sky, representing the passage of time and the preservation of memory, cold light source, small signature "@KhaldounAAkramah" integrated into the wall texture --ar 16:9 --style raw --q 2 --chaos 5
+A wide cinematic landscape of a vast, open Syrian plateau stretching towards the horizon under a clear, cold blue dawn sky, a single ancient stone archway standing strong in the foreground, profound stillness, architectural strength, no modern clutter, moral witness aesthetic, small signature "@KhaldounAAkramah" integrated into the stone texture --ar 16:9 --style raw --q 2 --chaos 5
 ```
 
 ---
 
 ## Slide 10: Outro (Signature Slide)
-* **File Path:** `images/sednaya_outro.png`
+* **File Path:** `images/syria_outro.png`
 * **Purpose:** Dark background with negative space for closing.
 * **Prompt:**
 ```text
-A minimal dark textured concrete background, clean and heavy, with a single, dramatic shaft of soft light revealing the surface texture, leaving ample negative space for text, small signature "@KhaldounAAkramah" in the bottom right corner with 25% opacity --ar 16:9 --style raw --q 2 --chaos 5
+A minimal dark textured stone background, clean and heavy, with a single, dramatic shaft of soft light revealing the surface texture, leaving ample negative space for text, small signature "@KhaldounAAkramah" in the bottom right corner with 25% opacity --ar 16:9 --style raw --q 2 --chaos 5
 ```

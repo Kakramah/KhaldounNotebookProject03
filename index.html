@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="عرض وثائقي تفاعلي وسردي عن معتقل صيدنايا؛ الذاكرة، الغياب، واستحقاق المساءلة والعدالة. توثيق أرشيفي مبني على الحقائق وفق نظام خلدون البصري.">
-  <title>صيدنايا: ذاكرة الغياب واستحقاق المساءلة</title>
+  <meta name="description" content="سوريا الجديدة - هوية غير مستوردة. عرض بصري تفاعلي يوثق رحلة الهوية السورية عبر مئة عام، وفقاً لنظام خلدون البصري.">
+  <title>سوريا الجديدة: هوية غير مستوردة</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,14 +15,14 @@
   <!-- Side Navigation Dots (Left Side for RTL) -->
   <nav class="side-nav" aria-label="تنقل الصفحات">
     <button class="side-nav-dot active" id="dot-01" onclick="scrollToSlide('slide-01')" title="البداية"></button>
-    <button class="side-nav-dot" id="dot-02" onclick="scrollToSlide('slide-02')" title="الأطروحة"></button>
-    <button class="side-nav-dot" id="dot-03" onclick="scrollToSlide('slide-03')" title="ما هو صيدنايا"></button>
-    <button class="side-nav-dot" id="dot-04" onclick="scrollToSlide('slide-04')" title="الذاكرة والشهادة"></button>
-    <button class="side-nav-dot" id="dot-05" onclick="scrollToSlide('slide-05')" title="الغياب والفقدان"></button>
-    <button class="side-nav-dot" id="dot-06" onclick="scrollToSlide('slide-06')" title="الرموز المادية"></button>
-    <button class="side-nav-dot" id="dot-07" onclick="scrollToSlide('slide-07')" title="استراحة استعارية"></button>
-    <button class="side-nav-dot" id="dot-08" onclick="scrollToSlide('slide-08')" title="المساءلة والقضاء"></button>
-    <button class="side-nav-dot" id="dot-09" onclick="scrollToSlide('slide-09')" title="العهد والخاتمة"></button>
+    <button class="side-nav-dot" id="dot-02" onclick="scrollToSlide('slide-02')" title="مئة عام"></button>
+    <button class="side-nav-dot" id="dot-03" onclick="scrollToSlide('slide-03')" title="المشاريع المستوردة"></button>
+    <button class="side-nav-dot" id="dot-04" onclick="scrollToSlide('slide-04')" title="الكائن المشوه"></button>
+    <button class="side-nav-dot" id="dot-05" onclick="scrollToSlide('slide-05')" title="الثورة والعودة للذات"></button>
+    <button class="side-nav-dot" id="dot-06" onclick="scrollToSlide('slide-06')" title="سقوط الأوهام"></button>
+    <button class="side-nav-dot" id="dot-07" onclick="scrollToSlide('slide-07')" title="سوريا الجديدة"></button>
+    <button class="side-nav-dot" id="dot-08" onclick="scrollToSlide('slide-08')" title="ميراث الأمة"></button>
+    <button class="side-nav-dot" id="dot-09" onclick="scrollToSlide('slide-09')" title="الخاتمة"></button>
     <button class="side-nav-dot" id="dot-10" onclick="scrollToSlide('slide-10')" title="النهاية"></button>
   </nav>
 
@@ -32,19 +32,20 @@
     <!-- Slide 1: Opening (البداية) -->
     <section id="slide-01" aria-label="شريحة العنوان">
       <div class="slide-indicator">01 / 10</div>
-      <div class="bg-image" style="background-image: url('images/sednaya_hero.png');"></div>
+      <!-- Placeholder image path, user will generate this later using image_prompts.md -->
+      <div class="bg-image" style="background-image: url('images/syria_hero.png');"></div>
       <div class="bg-overlay"></div>
       
       <div class="container text-center">
-        <h1 class="type-heavy highlight-warm">صيدنايا</h1>
-        <p class="type-poetic" style="font-size: 1.6rem; margin-bottom: 2rem;">ذاكرة الغياب واستحقاق المساءلة</p>
+        <h1 class="type-heavy highlight-warm">سوريا الجديدة</h1>
+        <p class="type-poetic" style="font-size: 1.6rem; margin-bottom: 2rem;">هويةٌ ليست للبيع.. ولا للاستيراد</p>
         <p class="type-light" style="max-width: 600px; margin: 0 auto; color: var(--text-muted);">
-          سرد بصري وثائقي مكرس لتوثيق فصول التغييب القسري، وصون الذاكرة الأخلاقية للضحايا والناجين في سياق العدالة السورية.
+          خذوا فيدرالياتكم، ولا مركزياتكم، وحلولكم المعلّبة، وابحثوا لها عن دول أخرى.
         </p>
       </div>
 
       <div class="scroll-prompt">
-        <span>اسحب لأسفل لاستكشاف الذاكرة</span>
+        <span>اسحب لأسفل لاستكشاف القصة</span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
       </div>
 
@@ -58,15 +59,15 @@
       <aside class="social-panel" id="panel-01" aria-label="رؤية خلدون - العنوان">
         <button class="panel-close-btn" onclick="toggleSidebar('panel-01')">&times;</button>
         <span class="post-meta-tag">منشور الكاتب الوعي</span>
-        <h2 class="post-title">صيدنايا والذاكرة الأخلاقية السورية</h2>
+        <h2 class="post-title">وصفات الرفض</h2>
         <div class="social-panel-content">
           <div class="post-section-title">عربي</div>
-          <p class="post-text">صيدنايا ليس مجرد سجن عسكري على أطراف دمشق، بل هو رمز لغياب الحقيقة ومحاولة طمس وجود جيل كامل. إن توثيق ما حدث داخل هذه الجدران الخرسانية هو خطوة أولى نحو تعافي الوطن. الوفاء للضحايا يبدأ من رفض النسيان وإيقاظ الوعي الأخلاقي؛ فالمستقبل لا يمكن أن ينهض على نكران الماضي أو تجاهل استحقاق العدالة.</p>
+          <p class="post-text">لا يمكن بناء الأوطان باستنساخ تجارب لا تشبهنا. سوريا ليست حقل تجارب للنظريات السياسية المعلبة. كل الوصفات الجاهزة سقطت عندما اصطدمت بواقع الأرض.</p>
           
           <div class="post-section-title">English</div>
-          <p class="post-text post-text-en">Sednaya is not merely a military prison on the outskirts of Damascus; it is a symbol of systematic erasure. Documenting the truth within these concrete walls is the foundational step toward national recovery. Loyalty to the victims begins with mending our collective memory and rejecting amnesia; a just future cannot be built upon the denial of the past.</p>
+          <p class="post-text post-text-en">Nations cannot be built by cloning experiences that do not resemble us. Syria is not a testing ground for packaged political theories. All ready-made recipes fell apart when they collided with the reality of the land.</p>
           
-          <div class="post-hashtags">#ذاكرة_صيدنايا #حقيقة_وذاكرة #سوريا #المساءلة_أولاً</div>
+          <div class="post-hashtags">#سوريا_الجديدة #هوية #وعي</div>
           
 
         </div>
@@ -75,18 +76,21 @@
       <div class="khaldoun-signature">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</div>
     </section>
 
-    <!-- Slide 2: Thesis (الأطروحة البصرية والتحريرية) - Split Vertical Layout -->
-    <section id="slide-02" class="layout-split-vertical" aria-label="الأطروحة والأثر">
-      <div class="split-image-half" style="background-image: url('images/sednaya_thesis.svg');"></div>
+    <!-- Slide 2: Thesis (مئة عام) - Split Vertical Layout -->
+    <section id="slide-02" class="layout-split-vertical" aria-label="مئة عام من الصراع">
+      <div class="split-image-half" style="background-image: url('images/syria_struggle.png');"></div>
       <div class="split-text-half">
         <div class="slide-indicator">02 / 10</div>
         <div class="glass-card-inline">
-          <h2 class="type-heavy highlight-cold distressed">الأطروحة البصرية والتحريرية</h2>
-          <p class="type-poetic" style="margin: 1.5rem 0; font-size: 1.35rem;">
-            "الذاكرةُ ليست رفاهيةً فكرية، بل هي درعنا الأخير في مواجهة الاستبداد وسحق الكرامة الإنسانية."
+          <h2 class="type-heavy highlight-cold distressed">معركة على الروح</h2>
+          <p class="type-official" style="margin: 1.5rem 0; font-size: 1.35rem;">
+            مئة عام كاملة، لم تكن سوريا خلالها تخوض معركة بناء دولة فحسب..
           </p>
           <p class="type-light">
-            بين سياق تاريخي اتسم بالرعب المنظم وعقود التغييب، نطرح الحقيقة كوثيقة جنائية تدين عصر الجلاد، وتصنع وعياً شعبياً يرى العدالة كمسار لا كخيار انتقامي.
+            مئة عام من المحاولات المتواصلة لاقتلاع هوية متجذرة في وجدان الناس. هوية نبتت في هذه الأرض كما تنبت أشجار الزيتون في سفوحها.
+          </p>
+          <p class="type-light" style="color: var(--text-muted); margin-top: 1rem;">
+            كان يمكن تطويرها، لكن ما جرى لم يكن إصلاحاً، بل محاولة استبدال كاملة.
           </p>
         </div>
         
@@ -97,18 +101,18 @@
         </button>
 
         <!-- Sidebar Panel -->
-        <aside class="social-panel" id="panel-02" aria-label="رؤية خلدون - الأطروحة">
+        <aside class="social-panel" id="panel-02" aria-label="رؤية خلدون - مئة عام">
           <button class="panel-close-btn" onclick="toggleSidebar('panel-02')">&times;</button>
           <span class="post-meta-tag">منشور الكاتب الوعي</span>
-          <h2 class="post-title">قوة الذاكرة في مواجهة الاستبداد</h2>
+          <h2 class="post-title">المحو والاستبدال</h2>
           <div class="social-panel-content">
             <div class="post-section-title">عربي</div>
-            <p class="post-text">السجن ليس مجرد قضبان حديدية، بل هو محاولة لسجن الفكرة وسحق الإرادة. عندما نوثق هذه الفصول، فإننا نحفظ جوهر الكرامة الإنسانية. هذه الأطروحة تؤكد أن الذاكرة السورية عصية على المحو، وأن كل محاولة للقفز فوق الجراح هي تواطؤ مع الجريمة. العدالة هي الحصن الذي يضمن ألا يولد جلاد جديد.</p>
+            <p class="post-text">الأنظمة المتعاقبة لم تحاول فهم النسيج السوري، بل حاولت تغييره بالقوة. الهوية ليست ثوباً يُخلع ويُستبدل. التجذر لا يمكن إلغاؤه بقرارات سياسية.</p>
             
             <div class="post-section-title">English</div>
-            <p class="post-text post-text-en">The prison is not merely iron bars; it is a mechanism to lock away truth and crush human will. By archiving these accounts, we guard the essence of dignity. This thesis asserts that Syrian memory cannot be erased, and that bypassing the wounds of victims is complicity in the crime. Justice is the shield against the rise of new tyrants.</p>
+            <p class="post-text post-text-en">Successive regimes did not try to understand the Syrian fabric, but tried to change it by force. Identity is not a garment to be taken off and replaced. Rootedness cannot be abolished by political decrees.</p>
             
-            <div class="post-hashtags">#الذاكرة_درع #عدالة_لا_انتقام #كرامة_الإنسان #صيدنايا</div>
+            <div class="post-hashtags">#الذاكرة #هوية #تجذر</div>
             
 
           </div>
@@ -118,22 +122,22 @@
       </div>
     </section>
 
-    <!-- Slide 3: Evidence 1 (ما هو معتقل صيدنايا؟) -->
-    <section id="slide-03" aria-label="ماهية المعتقل">
+    <!-- Slide 3: Imported Ideas -->
+    <section id="slide-03" aria-label="المشاريع المستوردة">
       <div class="slide-indicator">03 / 10</div>
-      <div class="bg-image" style="background-image: url('images/sednaya_structure.svg');"></div>
+      <div class="bg-image" style="background-image: url('images/syria_imported.png');"></div>
       <div class="bg-overlay"></div>
 
       <div class="container">
         <div class="grid-split">
           <div class="glass-card">
-            <h3 class="type-heavy highlight-warm">صيدنايا العسكري</h3>
-            <h2 class="type-official">آلة التغييب والهندسة الصامتة</h2>
+            <h3 class="type-heavy highlight-warm">وصفات الحالمين</h3>
+            <h2 class="type-official">مشاريع القوالب الجاهزة</h2>
             <p class="type-light">
-              سجن عسكري يقع شمال دمشق، صُمّم بهيكل خرساني ثلاثي الأجنحة ليكون مساحة مغلقة للغياب القسري والتصفية الصامتة بعيداً عن الرقابة الدولية والمحاسبة القانونية.
+              جاءت أجيال من المنظرين والحالمين بالمشاريع المستوردة، يحمل كل منهم وصفة جاهزة لإنقاذ سوريا.
             </p>
-            <p class="type-light" style="color: var(--text-muted);">
-              يمثل المعتقل البنية المادية الفظيعة للمنظومة الأمنية، حيث تفصل جدرانه بين الضحية الخاضعة للتغييب وعالم الحقيقة الخارجي.
+            <p class="type-light" style="color: var(--text-muted); margin-top: 1rem;">
+              مرة باسم القومية، ومرة باسم التقدمية، ومرة باسم الحداثة، ومرة باسم الثورة على الماضي. كان المطلوب واحداً: أن يتوقف السوري عن أن يكون نفسه.
             </p>
           </div>
           <div></div> <!-- Negative Space -->
@@ -147,18 +151,18 @@
       </button>
 
       <!-- Sidebar Panel -->
-      <aside class="social-panel" id="panel-03" aria-label="رؤية خلدون - ماهية المعتقل">
+      <aside class="social-panel" id="panel-03" aria-label="رؤية خلدون - المشاريع المستوردة">
         <button class="panel-close-btn" onclick="toggleSidebar('panel-03')">&times;</button>
         <span class="post-meta-tag">منشور الكاتب الوعي</span>
-        <h2 class="post-title">صيدنايا: هندسة الرعب والتوثيق الجنائي</h2>
+        <h2 class="post-title">فخ الاستيراد</h2>
         <div class="social-panel-content">
           <div class="post-section-title">عربي</div>
-          <p class="post-text">توزيع أجنحة صيدنايا الثلاثية على شكل حرف (Y) ليس مجرد تفصيل هندسي، بل هو تخطيط أمني صُمّم لسحق الفرد وتسهيل المراقبة والتحكم المطلق. نحن نوثق هذه البنية الخرسانية كدليل مادي وشاهد جنائي على ارتكاب أفظع الجرائم في صمت مطبق. الوعي بهذه الهندسة يفضح الطبيعة الممنهجة للاستبداد.</p>
+          <p class="post-text">عندما تستورد فكرة، فأنت تستورد سياقها التاريخي والجغرافي الذي لا ينطبق عليك. الاغتراب الذي نعيشه هو نتيجة مباشرة لمحاولة حشرنا في قوالب صُنعت لغيرنا.</p>
           
           <div class="post-section-title">English</div>
-          <p class="post-text post-text-en">The Y-shaped structure of Sednaya is not a random architectural layout; it was engineered to crush individuality and maximize control. We document this concrete monolith as a physical witness and forensic evidence of systematic crimes committed in absolute silence. Exposing this structure reveals the calculated design of tyranny.</p>
+          <p class="post-text post-text-en">When you import an idea, you import its historical and geographical context which does not apply to you. The alienation we experience is a direct result of trying to cram us into molds made for others.</p>
           
-          <div class="post-hashtags">#هندسة_الرعب #صيدنايا #توثيق_جنائي #الوعي</div>
+          <div class="post-hashtags">#اغتراب #قوالب_جاهزة</div>
           
 
         </div>
@@ -167,25 +171,25 @@
       <div class="khaldoun-signature">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</div>
     </section>
 
-    <!-- Slide 4: Evidence 2 (الذاكرة والشهادة) - Text beside Image Layout -->
-    <section id="slide-04" class="layout-side-by-side" aria-label="الذاكرة والشهادة">
+    <!-- Slide 4: The Deformed Entity (الكائن المشوه) - Text beside Image Layout -->
+    <section id="slide-04" class="layout-side-by-side" aria-label="الكائن المشوه">
       <div class="slide-indicator">04 / 10</div>
       
       <div class="container">
         <div class="editorial-grid">
           <div class="editorial-text">
-            <h3 class="type-heavy highlight-cold distressed">شرف الشهادة</h3>
-            <h2 class="type-official">الشهادة الشفوية كفعل مقاومة</h2>
+            <h3 class="type-heavy highlight-cold distressed">ضياع الملامح</h3>
+            <h2 class="type-official">كائن هجين بلا مرآة</h2>
             <p class="type-light">
-              الشهادات الصادرة من الناجين تمثل صوتاً أخلاقياً يرفض التزييف ويفضح المنظومة الفاسدة والمحاكمات الصورية غير العادلة.
+              ذابت الملامح، واختلطت المفاهيم، وضاعت الحدود بين ما نحن عليه وما يريد الآخرون لنا أن نكونه.
             </p>
             <p class="type-light" style="color: var(--text-muted); margin-top: 1rem;">
-              كل شهادة هي وثيقة تاريخية، وصوت الناجي هو الجسر الوحيد الذي يربط بين ضحايا الغياب ومستقبل السعي للمحاسبة.
+              لا نحن أصبحنا الغرب الذي حاول البعض تقليده، ولا بقينا كما كنا، ولا نجحنا في إنتاج نموذجنا الخاص.. فخرج كائن هجين مشوه لا يعرف إلى أي تاريخ ينتمي، ولا أي مستقبل يريد.
             </p>
           </div>
           <div class="editorial-image-container">
-            <img src="images/sednaya_testimony.svg" alt="كرسي التحقيق الفارغ" class="editorial-img" />
-            <p class="image-caption">صورة أرشيفية: كرسي تحقيق فارغ يسلط عليه مصباح معلق، يجسد غياب الشهود وعتمة التحقيق.</p>
+            <img src="images/syria_deformed.png" alt="مرآة مكسورة تعكس التشتت" class="editorial-img" />
+            <p class="image-caption">صورة مجازية: التوهان بين نسخ مشوهة واستيراد أعمى للمفاهيم.</p>
           </div>
         </div>
       </div>
@@ -197,18 +201,18 @@
       </button>
 
       <!-- Sidebar Panel -->
-      <aside class="social-panel" id="panel-04" aria-label="رؤية خلدون - الذاكرة والشهادة">
+      <aside class="social-panel" id="panel-04" aria-label="رؤية خلدون - الكائن المشوه">
         <button class="panel-close-btn" onclick="toggleSidebar('panel-04')">&times;</button>
         <span class="post-meta-tag">منشور الكاتب الوعي</span>
-        <h2 class="post-title">صوت الناجين: كسر جدار الصمت</h2>
+        <h2 class="post-title">أزمة المرآة</h2>
         <div class="social-panel-content">
           <div class="post-section-title">عربي</div>
-          <p class="post-text">الشهادات الحية للناجين هي السلاح الأخير ضد طمس المعالم والتاريخ. حين يتحدث معتقل سابق عن المعاناة والظلم، فهو لا يروي قصة ألم شخصية فحسب، بل يقرأ وثيقة إدانة تاريخية ضد نظام اعتاد القمع والتغييب. إن كسر الصمت هو أولى عتبات العدالة الحقيقية في سوريا الجديدة.</p>
+          <p class="post-text">عندما تقف أمة أمام مرآة مكسورة، فهي لن ترى سوى أجزاء متناثرة من ذاتها. التشوه البصري والروحي الذي أصابنا هو ضريبة محاولة العيش في جلباب غيرنا.</p>
           
           <div class="post-section-title">English</div>
-          <p class="post-text post-text-en">The live testimonies of survivors are our ultimate shield against historical distortion. When a former detainee speaks of injustice, they are reading a historical indictment against a regime rooted in erasure. Breaking the silence is the primary threshold for achieving true justice in a new Syria.</p>
+          <p class="post-text post-text-en">When a nation stands before a broken mirror, it will only see scattered fragments of itself. The visual and spiritual deformation we suffered is the tax of trying to live in someone else's skin.</p>
           
-          <div class="post-hashtags">#شرف_الشهادة #صوت_الناجين #الذاكرة_والحقيقة #سوريا</div>
+          <div class="post-hashtags">#تشوه #ضياع #أزمة_هوية</div>
           
 
         </div>
@@ -217,24 +221,24 @@
       <div class="khaldoun-signature">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</div>
     </section>
 
-    <!-- Slide 5: Evidence 3 (الغياب والفقدان) - Image beside Text Layout -->
-    <section id="slide-05" class="layout-side-by-side" aria-label="الغياب والفقدان">
+    <!-- Slide 5: The Revolution (الثورة والعودة للذات) - Image beside Text Layout -->
+    <section id="slide-05" class="layout-side-by-side" aria-label="الثورة والبحث عن الذات">
       <div class="slide-indicator">05 / 10</div>
       
       <div class="container">
         <div class="editorial-grid reverse">
           <div class="editorial-image-container">
-            <img src="images/sednaya_absence.svg" alt="المعثورات الجنائية لزنزانة صيدنايا" class="editorial-img" />
-            <p class="image-caption">توثيق جنائي: بطانية صوفية مطوية متروكة على الأرض، ترمز للغياب والفقدان المستمر.</p>
+            <img src="images/syria_revolution.png" alt="دمار يتخلله نور يمثل الأمل" class="editorial-img" />
+            <p class="image-caption">توثيق: من رحم الدمار، شعاع نور يكسر العتمة ليعيد طرح السؤال الأول.</p>
           </div>
           <div class="editorial-text">
-            <h3 class="type-heavy highlight-warm distressed">جرح الغياب</h3>
-            <h2 class="type-official">مأساة المفقودين ولوعة الانتظار</h2>
+            <h3 class="type-heavy highlight-warm distressed">الزلزال الروحي</h3>
+            <h2 class="type-official">العودة إلى السؤال الأول</h2>
             <p class="type-light">
-              خلف الأسوار الخرسانية الصامتة، يغيب المعتقلون قسراً، وتترك عائلاتهم في مواجهة انتظار أبدي لا يحمل إجابة ولا كشفا لمصيرهم.
+              ثم جاءت الثورة السورية.. وجاءت بعدها سنوات الدم والخراب والتهجير والانتظار الطويل.
             </p>
             <p class="type-light" style="color: var(--text-muted); margin-top: 1rem;">
-              الغياب في صيدنايا ليس انتهاءً للقصة، بل هو مأساة مستمرة تمتد إلى أسر الضحايا، لتصبح الحقيقة المفقودة هي المطالبة الأساسية التي ترفض التسوية.
+              وحين ظن كثيرون أن سوريا انتهت، كانت في الحقيقة تعود إلى سؤالها الأول: من نحن؟
             </p>
           </div>
         </div>
@@ -247,18 +251,18 @@
       </button>
 
       <!-- Sidebar Panel -->
-      <aside class="social-panel" id="panel-05" aria-label="رؤية خلدون - الغياب والفقدان">
+      <aside class="social-panel" id="panel-05" aria-label="رؤية خلدون - الثورة والسؤال">
         <button class="panel-close-btn" onclick="toggleSidebar('panel-05')">&times;</button>
         <span class="post-meta-tag">منشور الكاتب الوعي</span>
-        <h2 class="post-title">المفقودون ولوعة الغياب القسري</h2>
+        <h2 class="post-title">من نحن؟</h2>
         <div class="social-panel-content">
           <div class="post-section-title">عربي</div>
-          <p class="post-text">الغياب القسري في صيدنايا جريمة ممتدة تتجاوز أسوار المعتقل لتصيب الأمهات والآباء والزوجات الذين يقتاتون على الأمل البسيط. كشف مصير كل مفقود ومخفيّ هو التزام أخلاقي وتاريخي في صميم عملية العدالة الانتقالية. لا يمكن الاستقرار دون إنهاء هذه الحيرة المستمرة.</p>
+          <p class="post-text">الألم العظيم يصنع أسئلة عظيمة. وسط الركام، سقطت كل الشعارات الزائفة ولم يبقَ إلا الحقيقة العارية. الثورة لم تكن فقط على النظام، بل كانت ثورة على الذات المزيفة.</p>
           
           <div class="post-section-title">English</div>
-          <p class="post-text post-text-en">Forced disappearance in Sednaya is an ongoing crime that reaches beyond the walls to afflict families left in agonizing limbo. Revealing the fate of every missing person is an absolute ethical obligation at the heart of transitional justice. Stability is unattainable without resolving this painful suspense.</p>
+          <p class="post-text post-text-en">Great pain creates great questions. Amidst the rubble, all false slogans fell away, leaving only the naked truth. The revolution was not only against the regime, but against the fake self.</p>
           
-          <div class="post-hashtags">#الغياب_القسري #المفقودون #صيدنايا #حقيقة_وعدالة</div>
+          <div class="post-hashtags">#سؤال_الهوية #ثورة #سوريا</div>
           
 
         </div>
@@ -267,48 +271,17 @@
       <div class="khaldoun-signature">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</div>
     </section>
 
-    <!-- Slide 6: Evidence 4 (الرموز البصرية والمادية) -->
-    <section id="slide-06" aria-label="الرموز البصرية والتفاعلية">
+    <!-- Slide 6: Metaphor Break (استراحة بصرية صامتة - سقوط الأوهام) -->
+    <section id="slide-06" aria-label="الاستعارة البصرية الصامتة">
       <div class="slide-indicator">06 / 10</div>
-      <div class="bg-image" style="background-image: url('images/sednaya_scratches.svg');"></div>
-      <div class="bg-overlay"></div>
+      <div class="bg-image" style="background-image: url('images/syria_collapse.png');"></div>
+      <div class="bg-overlay" style="background: linear-gradient(to top, rgba(5,6,8,0.95) 0%, rgba(5,6,8,0.4) 60%, rgba(5,6,8,0.85) 100%);"></div>
 
-      <div class="container">
-        <div class="glass-card" style="max-width: 750px;">
-          <h3 class="type-heavy highlight-cold distressed">شهادات المادة والرمز</h3>
-          <p class="type-light">
-            تنطق جدران صيدنايا وعناصرها المادية بما عجز عن نقله المحبوسون؛ فكل باب وجدار وخدش يحمل قصة غياب ووثيقة صامتة.
+      <div class="container text-center">
+        <div class="metaphor-content" style="max-width: 650px; margin: 0 auto; background: rgba(5, 7, 10, 0.7); border: 1px solid var(--glass-border); padding: 2.5rem; backdrop-filter: blur(8px); border-radius: 2px;">
+          <p class="type-poetic" style="font-size: 1.45rem; line-height: 1.7; margin-bottom: 0;">
+            "مات الكائن المشوه تحت ركام الأكاذيب... مات يوم اكتشفنا أن الأمم لا تُبنى من كتالوجات تُشحن في الحاويات."
           </p>
-          
-          <!-- Interactive Hotspots Container -->
-          <div class="interactive-hotspots" id="symbols-hotspots">
-            <!-- Hotspot 1: Closed Iron Door -->
-            <div class="hotspot" id="spot-door" style="top: 30%; right: 25%;" onclick="showHotspotCard('card-door', event)" title="الباب الحديدي">
-              <span style="font-size:0.65rem; color:#000; font-weight:700;">١</span>
-            </div>
-            <div class="hotspot-card" id="card-door" style="top: 10%; right: 30%;">
-              <h4>الباب الحديدي العتيق</h4>
-              <p>شاهد صامت موصد يعزل زنزانة المعتقل عن نسائم الحرية والضوء الخارجي، يمثل نهاية العالم المادي للضحية.</p>
-            </div>
-
-            <!-- Hotspot 2: Concrete Wall -->
-            <div class="hotspot" id="spot-wall" style="top: 55%; right: 65%;" onclick="showHotspotCard('card-wall', event)" title="الجدار البارد">
-              <span style="font-size:0.65rem; color:#000; font-weight:700;">٢</span>
-            </div>
-            <div class="hotspot-card" id="card-wall" style="top: 35%; right: 10%;">
-              <h4>الجدار الخرساني البارد</h4>
-              <p>كتل إسمنتية صلبة تمتص الدفء والأصوات، وتحفظ صدى التنهيدات والصلوات الخافتة في جوف العتمة.</p>
-            </div>
-
-            <!-- Hotspot 3: Scratches / Tally Marks -->
-            <div class="hotspot" id="spot-scratches" style="top: 75%; right: 45%;" onclick="showHotspotCard('card-scratches', event)" title="الخدوش والتواريخ">
-              <span style="font-size:0.65rem; color:#000; font-weight:700;">٣</span>
-            </div>
-            <div class="hotspot-card" id="card-scratches" style="top: 50%; right: 10%;">
-              <h4>الخدوش وعلامات الأيام</h4>
-              <p>خطوط حُفرت بأظافر الأسرى أو حواف الحجارة لتعداد الأيام وتوثيق الوجود وسط النسيان المفروض.</p>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -319,37 +292,45 @@
       </button>
 
       <!-- Sidebar Panel -->
-      <aside class="social-panel" id="panel-06" aria-label="رؤية خلدون - الرموز البصرية">
+      <aside class="social-panel" id="panel-06" aria-label="رؤية خلدون - استراحة استعارية">
         <button class="panel-close-btn" onclick="toggleSidebar('panel-06')">&times;</button>
         <span class="post-meta-tag">منشور الكاتب الوعي</span>
-        <h2 class="post-title">الشواهد المادية والتوثيق الجنائي البصري</h2>
+        <h2 class="post-title">انهيار الكتالوجات</h2>
         <div class="social-panel-content">
           <div class="post-section-title">عربي</div>
-          <p class="post-text">الخدوش والأحرف المحفورة على جدران الزنازين في صيدنايا هي نصوص تاريخية ومستندات جنائية بليغة. تعبر هذه العلامات البسيطة عن محاولة المعتقلين التمسك بهويتهم والاعتراف بوجودهم أمام التاريخ. كل خدش هو إثبات وجود وتحدٍ صامت لآلة المحو والاستبداد.</p>
+          <p class="post-text">الصمت هنا يمثل انهيار كل الأكاذيب. الرماد والركام ليسا النهاية، بل هما السماد الذي ستنبت منه الحقيقة. الهويات المستعارة لا تصمد أمام اختبار الدم.</p>
           
           <div class="post-section-title">English</div>
-          <p class="post-text post-text-en">The scratches and carved marks on Sednaya's cell walls serve as silent historical texts and eloquent forensic documents. These simple tallies represent the detainees' resistance against annihilation and erasure. Every scratch is a proof of existence and a quiet challenge to tyranny.</p>
+          <p class="post-text post-text-en">Silence here represents the collapse of all lies. Ashes and rubble are not the end, but the fertilizer from which truth will sprout. Borrowed identities cannot withstand the test of blood.</p>
           
-          <div class="post-hashtags">#شواهد_مادية #جدران_صيدنايا #توثيق_الذاكرة #الحقيقة</div>
+          <div class="post-hashtags">#استعارة_بصرية #نهاية_الوهم</div>
           
 
         </div>
       </aside>
 
-      <div class="khaldoun-signature">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</div>
+      <div class="khaldoun-signature">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐য়াল𝓴𝓻𝓪𝓶𝓪𝓱</div>
     </section>
 
-    <!-- Slide 7: Metaphor Break (استراحة بصرية صامتة) -->
-    <section id="slide-07" aria-label="الاستعارة البصرية الصامتة">
+    <!-- Slide 7: The New Birth (سوريا الجديدة) -->
+    <section id="slide-07" aria-label="ولادة سوريا الجديدة">
       <div class="slide-indicator">07 / 10</div>
-      <div class="bg-image" style="background-image: url('images/sednaya_door.svg');"></div>
-      <div class="bg-overlay" style="background: linear-gradient(to top, rgba(5,6,8,0.95) 0%, rgba(5,6,8,0.4) 60%, rgba(5,6,8,0.85) 100%);"></div>
+      <div class="bg-image" style="background-image: url('images/syria_rebirth.png');"></div>
+      <div class="bg-overlay"></div>
 
-      <div class="container text-center">
-        <div class="metaphor-content" style="max-width: 650px; margin: 0 auto; background: rgba(5, 7, 10, 0.7); border: 1px solid var(--glass-border); padding: 2.5rem; backdrop-filter: blur(8px); border-radius: 2px;">
-          <p class="type-poetic" style="font-size: 1.45rem; line-height: 1.7; margin-bottom: 0;">
-            "بين ظلمة الباب الحديدي الموصد وشعاع الضوء المتسرب من عتبة النظر، حكاية صمود ترويها التفاصيل الصامتة."
-          </p>
+      <div class="container">
+        <div class="grid-split">
+          <div class="glass-card">
+            <h3 class="type-heavy highlight-warm">من بين الأنقاض</h3>
+            <h2 class="type-official">سوريا الجديدة</h2>
+            <p class="type-light">
+              فاليوم، هناك طفل وُلِد من بين الأنقاض.. لا يحمل عقدة النقص أمام أحد، ولا يبحث عن هوية في كتب الآخرين.
+            </p>
+            <p class="type-light" style="margin-top: 1rem;">
+              لا ينتظر شهادة قبول من الشرق أو الغرب. طفل سيكبر وهو يعرف أن هويته ليست سلعة مستوردة.
+            </p>
+          </div>
+          <div></div> <!-- Negative Space -->
         </div>
       </div>
 
@@ -360,18 +341,18 @@
       </button>
 
       <!-- Sidebar Panel -->
-      <aside class="social-panel" id="panel-07" aria-label="رؤية خلدون - استراحة استعارية">
+      <aside class="social-panel" id="panel-07" aria-label="رؤية خلدون - سوريا الجديدة">
         <button class="panel-close-btn" onclick="toggleSidebar('panel-07')">&times;</button>
         <span class="post-meta-tag">منشور الكاتب الوعي</span>
-        <h2 class="post-title">الباب الحديدي ورمزية العتبة</h2>
+        <h2 class="post-title">الجيل الحر</h2>
         <div class="social-panel-content">
           <div class="post-section-title">عربي</div>
-          <p class="post-text">في الصمت المطبق عند عتبة الباب الحديدي، تتحدث الاستعارات البصرية بوضوح. العصّاصة (فتحة الباب الصغيرة) هي المنفذ الوحيد المادي والبصري الذي يراقب فيه السجان فريسته. عندما نجعل هذه التفاصيل صامتة تتكلم بوعي، فإننا نكرم الجلال الروحي للضحية ونرفض تحويل مأساتها إلى مجرد استعراض بصري.</p>
+          <p class="post-text">الطفل الذي يولد اليوم في سوريا يحمل مناعة ضد الأوهام. لقد رأى تكلفة الاستبداد وتكلفة التبعية. هذا الجيل لن يقبل بأن يكون نسخة باهتة من غيره.</p>
           
           <div class="post-section-title">English</div>
-          <p class="post-text post-text-en">At the threshold of the iron cell door, visual metaphors speak clearly. The peephole is the sole physical and visual channel through which the jailer monitors the prey. Keeping these details silent honors the dignity of the victim and rejects the sensationalization of their tragedy.</p>
+          <p class="post-text post-text-en">The child born today in Syria is immune to illusions. They have seen the cost of tyranny and the cost of dependency. This generation will not accept being a pale copy of someone else.</p>
           
-          <div class="post-hashtags">#استعارة_بصرية #صمت_صيدنايا #الباب_الحديدي #كرامة</div>
+          <div class="post-hashtags">#ولادة_من_الركام #الجيل_الجديد #أمل</div>
           
 
         </div>
@@ -380,25 +361,25 @@
       <div class="khaldoun-signature">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</div>
     </section>
 
-    <!-- Slide 8: Turn (المساءلة والقانون) - Dossier Layout -->
-    <section id="slide-08" aria-label="شرف المساءلة والقضاء">
+    <!-- Slide 8: The Heritage (الميراث الأصيل) -->
+    <section id="slide-08" aria-label="ميراث الأمة">
       <div class="slide-indicator">08 / 10</div>
-      <div class="bg-image" style="background-image: url('images/sednaya_dossier.svg');"></div>
+      <div class="bg-image" style="background-image: url('images/syria_heritage.png');"></div>
       <div class="bg-overlay"></div>
 
       <div class="container">
         <div class="grid-split">
+          <div></div> <!-- Negative Space on left -->
           <div class="dossier-card">
-            <h3 class="type-heavy highlight-cold distressed">استحقاق العدالة</h3>
-            <h2 class="type-official">المساءلة وكشف زيف الفساد القضائي</h2>
+            <h3 class="type-heavy highlight-cold distressed">البناء الحقيقي</h3>
+            <h2 class="type-official">ميراث أمة كاملة</h2>
             <p class="type-light">
-              وثق المعتقلون الطبيعة الصورية للمحاكم العسكرية وفساد اللجان القضائية؛ حيث تُسقط تهم التخابر بمبالغ طائلة للمتشبثين بمقاعد السلطة.
+              سيبني هويته الوطنية السورية حجراً فوق حجر، مستنداً إلى دين هذه البلاد، وثقافتها، وعاداتها، وأعرافها.
             </p>
             <p class="type-light">
-              إن التأسيس لبناء دولة الكرامة يتطلب محاسبة المسؤولين، وكشف الحقيقة دون محاباة، لضمان عدم عودة عصور الخراب وتكرار سياقات القمع.
+              وإلى ذاكرتها وتنوعها الحقيقي الذي عاش قروناً قبل أن تكتشفه نظريات السياسة الحديثة.
             </p>
           </div>
-          <div></div> <!-- Negative Space -->
         </div>
       </div>
 
@@ -409,18 +390,18 @@
       </button>
 
       <!-- Sidebar Panel -->
-      <aside class="social-panel" id="panel-08" aria-label="رؤية خلدون - المساءلة والعدالة">
+      <aside class="social-panel" id="panel-08" aria-label="رؤية خلدون - ميراث الأمة">
         <button class="panel-close-btn" onclick="toggleSidebar('panel-08')">&times;</button>
         <span class="post-meta-tag">منشور الكاتب الوعي</span>
-        <h2 class="post-title">المحاسبة كشرط حتمي للبناء</h2>
+        <h2 class="post-title">أساس البناء</h2>
         <div class="social-panel-content">
           <div class="post-section-title">عربي</div>
-          <p class="post-text">المساءلة والعدالة الحقيقية ليست انتقاماً شخصياً، بل هي كشف للحقيقة ومحاسبة المتورطين قضائياً وعسكرياً في بنية التغييب. لا يمكن أن نبني مستقبلاً مستداماً بالقفز فوق جراح الضحايا، بل يبدأ البناء من الإخضاع التام للمنظومات الفاسدة لسلطة القانون المستقل والنزيه.</p>
+          <p class="post-text">العودة للجذور ليست رجعية، بل هي الانطلاق من قاعدة صلبة. الدين والثقافة والعادات ليست عوائق، بل هي المادة اللاصقة التي تبني نسيجاً اجتماعياً حقيقياً وليس مفروضاً بقوة السلطة.</p>
           
           <div class="post-section-title">English</div>
-          <p class="post-text post-text-en">True accountability and justice are not about personal revenge, but about exposing the systemic apparatus of erasure and prosecuting those responsible. A stable future cannot be built by stepping over the wounds of the victims; it must begin with holding corrupt systems accountable under independent law.</p>
+          <p class="post-text post-text-en">Returning to the roots is not reactionary; it is starting from a solid base. Religion, culture, and customs are not obstacles; they are the binding agent that builds a true social fabric, not one imposed by force.</p>
           
-          <div class="post-hashtags">#المساءلة_والقانون #العدالة_الانتقالية #كشف_الحقيقة #سوريا</div>
+          <div class="post-hashtags">#ميراث_الأمة #الهوية_الأصيلة #ثقافة</div>
           
 
         </div>
@@ -429,19 +410,19 @@
       <div class="khaldoun-signature">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</div>
     </section>
 
-    <!-- Slide 9: Closing (العهد) -->
+    <!-- Slide 9: Closing (الخاتمة) -->
     <section id="slide-09" aria-label="الخاتمة والعهد">
       <div class="slide-indicator">09 / 10</div>
-      <div class="bg-image" style="background-image: url('images/sednaya_dawn.svg');"></div>
+      <div class="bg-image" style="background-image: url('images/syria_covenant.png');"></div>
       <div class="bg-overlay"></div>
 
       <div class="container text-center">
         <div class="glass-card" style="max-width: 750px; margin: 0 auto; padding: 3.5rem;">
-          <h2 class="type-heavy highlight-warm">عهد صون الحقيقة</h2>
+          <h2 class="type-heavy highlight-warm">ليست مشروعاً للآخرين</h2>
           <p class="type-poetic" style="font-size: 1.35rem; margin-bottom: 2rem; line-height: 1.7;">
-            "هل سنحمي هذه الذاكرة لتكون درعنا الأخلاقي ضد الاستبداد... أم سنترك الحقيقة تضيع في غياهب الضجيج العابر؟"
+            "ولأول مرة منذ مئة عام، لن تكون سوريا مشروعاً لتطبيق أفكار الآخرين... بل ستكون سوريا نفسها."
           </p>
-          <h3 class="type-official" style="letter-spacing: 1px;">التاريخ لا يرحم الصامتين، والعدالة ميثاق مع الضحايا.</h3>
+          <h3 class="type-official" style="letter-spacing: 1px;">الهوية التي نجت من المحو، لا يمكن محوها بعد اليوم.</h3>
         </div>
       </div>
 
@@ -455,15 +436,15 @@
       <aside class="social-panel" id="panel-09" aria-label="رؤية خلدون - الخاتمة والعهد">
         <button class="panel-close-btn" onclick="toggleSidebar('panel-09')">&times;</button>
         <span class="post-meta-tag">منشور الكاتب الوعي</span>
-        <h2 class="post-title">الميثاق الأخلاقي: عهد الحقيقة</h2>
+        <h2 class="post-title">سوريا نفسها</h2>
         <div class="social-panel-content">
           <div class="post-section-title">عربي</div>
-          <p class="post-text">الخاتمة ليست نهاية المطاف بل هي بدء للمسؤولية الأخلاقية لكل سوري يطمح إلى وطن حر ونظيف. حماية ذاكرة المعتقلين والمغيبين قسراً هي الضمانة التاريخية لحماية أجيالنا القادمة من ثقافة التمجيد والتعصب الأعمى. الالتزام بالحقائق هو العهد الذي نقطعه مع الضحايا الأبرياء.</p>
+          <p class="post-text">هذا هو العهد الجديد: نحن لسنا ساحة خلفية لأحد، ولسنا مختبراً لأفكار مستوردة. كل مشاريع الاستيراد أصبحت أطلالاً، وما سيبقى هو الهوية التي دفعت ثمن بقائها.</p>
           
           <div class="post-section-title">English</div>
-          <p class="post-text post-text-en">The conclusion is not an end, but the starting point of ethical responsibility for every Syrian striving for a free nation. Preserving the memory of the disappeared is our historical guarantee protecting future generations from the culture of blind glorification. Truth is our covenant with the victims.</p>
+          <p class="post-text post-text-en">This is the new covenant: We are no one's backyard, nor a laboratory for imported ideas. All import projects have become ruins, and what will remain is the identity that paid the price for its survival.</p>
           
-          <div class="post-hashtags">#العهد_الأخلاقي #حماية_الذاكرة #الحقيقة_والكرامة #سوريا_الحرة</div>
+          <div class="post-hashtags">#سوريا_نفسها #العهد #هوية_باقية</div>
           
 
         </div>
@@ -475,18 +456,18 @@
     <!-- Slide 10: Outro (النهاية والتوقيع) -->
     <section id="slide-10" aria-label="شريحة الإغلاق والتوقيع">
       <div class="slide-indicator">10 / 10</div>
-      <div class="bg-image" style="background-image: url('images/sednaya_outro.svg');"></div>
+      <div class="bg-image" style="background-image: url('images/syria_outro.png');"></div>
       <div class="bg-overlay" style="background: radial-gradient(circle, rgba(6,9,14,0.92) 0%, rgba(4,5,7,0.99) 100%);"></div>
 
       <div class="container text-center">
-        <h2 class="type-heavy highlight-warm" style="font-size: 2.2rem; margin-bottom: 2rem;">صون الذاكرة والمسؤولية المستمرة</h2>
+        <h2 class="type-heavy highlight-warm" style="font-size: 2.2rem; margin-bottom: 2rem;">هوية تجذرت بالدم.. فلا يمكن محوها</h2>
         <p class="type-light" style="max-width: 600px; margin: 0 auto; color: var(--text-muted); font-size: 1rem;">
-          تم إعداد هذا العرض الوثائقي وصياغة أطروحته البصرية والتحريرية وفقاً لتعاليم ومعايير نظام خلدون المرجعي للخطوط والشرائح البصرية.
+          تم إعداد هذا العرض وصياغة أطروحته البصرية والتحريرية وفقاً لتعاليم ومعايير نظام خلدون المرجعي.
         </p>
       </div>
 
       <footer style="left: 4rem; bottom: 3rem;">
-        وثائقي صيدنايا التفاعلي &copy; ٢٠٢٦
+        سوريا الجديدة التفاعلي &copy; ٢٠٢٦
       </footer>
 
       <!-- Small embedded signature mandated by the rule -->
@@ -517,31 +498,6 @@
         panel.classList.add('active');
       }
     }
-
-    // Interactive hotspots popup display for slide 06
-    function showHotspotCard(cardId, event) {
-      // Prevent event bubbling
-      event.stopPropagation();
-
-      const activeCard = document.getElementById(cardId);
-      const isCurrentlyVisible = activeCard.style.display === 'block';
-
-      // Hide all other hotspot cards first
-      document.querySelectorAll('.hotspot-card').forEach((c) => {
-        c.style.display = 'none';
-      });
-
-      if (!isCurrentlyVisible) {
-        activeCard.style.display = 'block';
-      }
-    }
-
-    // Hide hotspot cards when clicking anywhere on the screen
-    document.addEventListener('click', () => {
-      document.querySelectorAll('.hotspot-card').forEach((c) => {
-        c.style.display = 'none';
-      });
-    });
 
     // Detect scrolling and highlight the active navigation dot
     const container = document.getElementById('main-scroll-container');
