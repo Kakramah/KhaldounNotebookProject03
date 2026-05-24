@@ -409,26 +409,6 @@ section {
   word-spacing: 0.5rem;
 }
 
-/* Behind the Scenes Prompt box */
-.prompt-info {
-  background: rgba(255,255,255,0.02);
-  border: 1px dashed rgba(255,255,255,0.1);
-  padding: 1rem;
-  border-radius: 3px;
-  margin-top: 2rem;
-}
-
-.prompt-text {
-  font-family: monospace;
-  font-size: 0.75rem;
-  direction: ltr;
-  text-align: left;
-  color: var(--text-muted);
-  user-select: all;
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-
 /* Khaldoun Signature (Strict rule compliance) */
 .khaldoun-signature {
   position: absolute;
