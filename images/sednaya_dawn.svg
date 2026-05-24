@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Sky Dawn Gradient (Dark night to sunrise orange) -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="35%" stop-color="#0f172a" />
+      <stop offset="65%" stop-color="#1e293b" />
+      <stop offset="85%" stop-color="#0284c7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.75" />
+    </linearGradient>
+
+    <!-- Dark Cell Interior Gradient -->
+    <radialGradient id="cellGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0c0f16" stop-opacity="0" />
+      <stop offset="70%" stop-color="#05070a" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#020304" stop-opacity="1" />
+    </radialGradient>
+
+    <!-- Window frame border glow -->
+    <radialGradient id="windowGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#bae6fd" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Forensic Noise Filter (Grainy dawn atmosphere) -->
+    <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="4" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.05 0" />
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Sky Background (The Hope Outside) -->
+  <rect width="100%" height="100%" fill="url(#skyGrad)" />
+  
+  <!-- High-barred Cell Window openings (Structural silhouette) -->
+  <g id="window-bars" fill="#030406" stroke="#000" stroke-width="4">
+    <!-- Solid concrete wall of the cell -->
+    <!-- Window cutout is an arched opening in the middle -->
+    <path d="M 0,0 L 1920,0 L 1920,1080 L 0,1080 Z 
+             M 660,250 C 660,120 1260,120 1260,250 L 1260,780 C 1260,800 1240,820 1220,820 L 700,820 C 680,820 660,800 660,780 Z" 
+             fill-rule="evenodd" />
+  </g>
+
+  <!-- Highlights on the concrete window bevel/sill (catching the dawn light) -->
+  <path d="M 660,780 L 700,820 L 1220,820 L 1260,780 L 1260,790 L 1220,830 L 700,830 L 660,790 Z" fill="#475569" opacity="0.3" />
+  <path d="M 660,250 C 660,120 1260,120 1260,250" fill="none" stroke="#94a3b8" stroke-width="3" opacity="0.2" filter="blur(2px)" />
+
+  <!-- Iron Bars in the window opening -->
+  <g stroke="#05070a" stroke-width="22" stroke-linecap="round">
+    <!-- Vertical Bars -->
+    <line x1="780" y1="150" x2="780" y2="820" />
+    <line x1="960" y1="130" x2="960" y2="820" />
+    <line x1="1140" y1="150" x2="1140" y2="820" />
+
+    <!-- Horizontal Bars -->
+    <line x1="660" y1="350" x2="1260" y2="350" />
+    <line x1="660" y1="580" x2="1260" y2="580" />
+  </g>
+
+  <!-- Highlight lines on the iron bars -->
+  <g stroke="#7dd3fc" stroke-width="2" opacity="0.25">
+    <line x1="782" y1="150" x2="782" y2="820" />
+    <line x1="962" y1="130" x2="962" y2="820" />
+    <line x1="1142" y1="150" x2="1142" y2="820" />
+    <line x1="660" y1="351" x2="1260" y2="351" />
+    <line x1="660" y1="581" x2="1260" y2="581" />
+  </g>
+
+  <!-- Cell Interior Shade overlay (vignette over window) -->
+  <rect width="100%" height="100%" fill="url(#cellGrad)" pointer-events="none" />
+  <rect width="100%" height="100%" fill="url(#windowGlow)" opacity="0.3" pointer-events="none" />
+
+  <!-- Noise Overlay for photographic grain -->
+  <rect width="100%" height="100%" fill="#fff" opacity="0.05" filter="url(#noiseFilter)" />
+
+  <!-- Integrated Signature -->
+  <text x="1870" y="1030" text-anchor="end" font-family="'Amiri', serif" font-style="italic" font-size="20" fill="#cbd5e1" opacity="0.25">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</text>
+</svg>

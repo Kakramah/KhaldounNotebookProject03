@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient resembling dark blueprint paper -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0b132b" />
+      <stop offset="100%" stop-color="#030712" />
+    </radialGradient>
+    
+    <!-- Light Glows -->
+    <radialGradient id="warmCenter" cx="50%" cy="50%" r="30%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Forensic Noise Filter -->
+    <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.06 0" />
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#warmCenter)" />
+
+  <!-- Blueprint Grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.6">
+    <!-- Horizontal Grid -->
+    <line x1="0" y1="100" x2="1920" y2="100" />
+    <line x1="0" y1="200" x2="1920" y2="200" />
+    <line x1="0" y1="300" x2="1920" y2="300" />
+    <line x1="0" y1="400" x2="1920" y2="400" />
+    <line x1="0" y1="500" x2="1920" y2="500" />
+    <line x1="0" y1="600" x2="1920" y2="600" />
+    <line x1="0" y1="700" x2="1920" y2="700" />
+    <line x1="0" y1="800" x2="1920" y2="800" />
+    <line x1="0" y1="900" x2="1920" y2="900" />
+    <line x1="0" y1="1000" x2="1920" y2="1000" />
+    
+    <!-- Vertical Grid -->
+    <line x1="200" y1="0" x2="200" y2="1080" />
+    <line x1="400" y1="0" x2="400" y2="1080" />
+    <line x1="600" y1="0" x2="600" y2="1080" />
+    <line x1="800" y1="0" x2="800" y2="1080" />
+    <line x1="1000" y1="0" x2="1000" y2="1080" />
+    <line x1="1200" y1="0" x2="1200" y2="1080" />
+    <line x1="1400" y1="0" x2="1400" y2="1080" />
+    <line x1="1600" y1="0" x2="1600" y2="1080" />
+    <line x1="1800" y1="0" x2="1800" y2="1080" />
+  </g>
+
+  <!-- Technical Circular Radar/Target indicators -->
+  <circle cx="960" cy="540" r="400" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="5,10" opacity="0.2" />
+  <circle cx="960" cy="540" r="250" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.3" />
+  <circle cx="960" cy="540" r="100" fill="none" stroke="#ea580c" stroke-width="1" stroke-dasharray="3,3" opacity="0.4" />
+  
+  <!-- Symmetrical Three-Bladed Y-Shape Prison Structure (Architectural Layout) -->
+  <g id="y-structure" stroke="#38bdf8" stroke-width="4" fill="none" opacity="0.85">
+    <!-- Center Node -->
+    <circle cx="960" cy="540" r="45" fill="#0f172a" stroke="#ea580c" stroke-width="5" />
+    
+    <!-- Wing A (Top Vertical wing) -->
+    <path d="M935,500 L935,150 A25,25 0 0,1 985,150 L985,500" fill="#0f172a" stroke-width="4" />
+    <!-- Wing A internal cell grid divisions -->
+    <line x1="935" y1="200" x2="985" y2="200" stroke="#1e293b" stroke-width="2" />
+    <line x1="935" y1="250" x2="985" y2="250" stroke="#1e293b" stroke-width="2" />
+    <line x1="935" y1="300" x2="985" y2="300" stroke="#1e293b" stroke-width="2" />
+    <line x1="935" y1="350" x2="985" y2="350" stroke="#1e293b" stroke-width="2" />
+    <line x1="935" y1="400" x2="985" y2="400" stroke="#1e293b" stroke-width="2" />
+    <line x1="935" y1="450" x2="985" y2="450" stroke="#1e293b" stroke-width="2" />
+
+    <!-- Wing B (Bottom Left Wing, rotated -120deg) -->
+    <!-- Center is 960,540. Rotate paths by -120 degrees -->
+    <g transform="rotate(-120, 960, 540)">
+      <path d="M935,500 L935,150 A25,25 0 0,1 985,150 L985,500" fill="#0f172a" stroke-width="4" />
+      <line x1="935" y1="200" x2="985" y2="200" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="250" x2="985" y2="250" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="300" x2="985" y2="300" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="350" x2="985" y2="350" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="400" x2="985" y2="400" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="450" x2="985" y2="450" stroke="#1e293b" stroke-width="2" />
+    </g>
+
+    <!-- Wing C (Bottom Right Wing, rotated 120deg) -->
+    <g transform="rotate(120, 960, 540)">
+      <path d="M935,500 L935,150 A25,25 0 0,1 985,150 L985,500" fill="#0f172a" stroke-width="4" />
+      <line x1="935" y1="200" x2="985" y2="200" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="250" x2="985" y2="250" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="300" x2="985" y2="300" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="350" x2="985" y2="350" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="400" x2="985" y2="400" stroke="#1e293b" stroke-width="2" />
+      <line x1="935" y1="450" x2="985" y2="450" stroke="#1e293b" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- Central Octagonal courtyard overlay -->
+  <polygon points="920,500 960,480 1000,500 1020,540 1000,580 960,600 920,580 900,540" fill="none" stroke="#ea580c" stroke-width="2" opacity="0.6" />
+
+  <!-- Blueprint labeling / Dimensions -->
+  <g fill="#38bdf8" font-family="monospace" font-size="12" opacity="0.6">
+    <text x="960" y="90" text-anchor="middle">WING_A - NORTH BLOCK</text>
+    <text x="560" y="800" text-anchor="middle">WING_B - SOUTH-WEST BLOCK</text>
+    <text x="1360" y="800" text-anchor="middle">WING_C - SOUTH-EAST BLOCK</text>
+    <text x="960" y="545" text-anchor="middle" font-size="10" fill="#ea580c" font-weight="bold">CENTER_POINT</text>
+    
+    <!-- Coordinate indicators -->
+    <text x="50" y="50">LAT: 33°41'38" N</text>
+    <text x="50" y="75">LON: 36°19'25" E</text>
+    <text x="50" y="100">SCALE: 1:1250</text>
+  </g>
+
+  <!-- Noise and Paper texture overlay -->
+  <rect width="100%" height="100%" fill="#fff" opacity="0.05" filter="url(#noiseFilter)" />
+
+  <!-- Vignette border -->
+  <rect width="100%" height="100%" fill="none" stroke="#020617" stroke-width="80" opacity="0.9" />
+
+  <!-- Integrated Signature -->
+  <text x="1870" y="1030" text-anchor="end" font-family="'Amiri', serif" font-style="italic" font-size="20" fill="#cbd5e1" opacity="0.25">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</text>
+</svg>

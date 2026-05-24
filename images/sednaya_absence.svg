@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Dark cell floor and walls -->
+    <linearGradient id="wallFloorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080b11" />
+      <stop offset="50%" stop-color="#0c0e14" />
+      <stop offset="100%" stop-color="#020305" />
+    </linearGradient>
+
+    <!-- Shaft of cold dawn light -->
+    <linearGradient id="lightShaft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#7dd3fc" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Blanket color gradient -->
+    <linearGradient id="blanketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Forensic Noise Filter -->
+    <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.06 0" />
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Base floor and wall background -->
+  <rect width="100%" height="100%" fill="url(#wallFloorGrad)" />
+
+  <!-- Wall-floor joint line (subtle) -->
+  <line x1="-100" y1="500" x2="2020" y2="500" stroke="#030406" stroke-width="6" opacity="0.8" />
+  <line x1="-100" y1="500" x2="2020" y2="500" stroke="#1e293b" stroke-width="1" opacity="0.2" />
+
+  <!-- Shaft of Light cutting diagonally from top-left (window) to bottom-right -->
+  <polygon points="100,-100 450,-100 1600,1180 800,1180" fill="url(#lightShaft)" />
+
+  <!-- Folded Wool Blanket (Metaphor of Absence) -->
+  <g id="blanket" opacity="0.8">
+    <!-- Base Shadow -->
+    <ellipse cx="980" cy="850" rx="350" ry="75" fill="#000" opacity="0.6" filter="blur(10px)" />
+
+    <!-- Blanket Fold 1 (Bottom layer) -->
+    <path d="M700,860 Q650,820 700,780 L1250,780 Q1300,820 1250,860 Z" fill="url(#blanketGrad)" stroke="#0f172a" stroke-width="3" />
+    
+    <!-- Blanket Fold 2 (Middle layer) -->
+    <path d="M720,830 Q680,795 720,760 L1230,760 Q1270,795 1230,830 Z" fill="#1e293b" stroke="#0f172a" stroke-width="3" />
+    
+    <!-- Blanket Fold 3 (Top layer) -->
+    <path d="M750,800 Q710,770 750,740 L1200,740 Q1240,770 1200,800 Z" fill="#334155" stroke="#0f172a" stroke-width="3" />
+
+    <!-- Stripes on the wool blanket (typical military/prison issue blanket) -->
+    <path d="M820,742 L800,800" stroke="#475569" stroke-width="12" opacity="0.4" />
+    <path d="M850,742 L830,800" stroke="#475569" stroke-width="12" opacity="0.4" />
+    <path d="M1100,742 L1080,800" stroke="#475569" stroke-width="12" opacity="0.4" />
+    <path d="M1130,742 L1110,800" stroke="#475569" stroke-width="12" opacity="0.4" />
+
+    <!-- Texture lines representing fold creases -->
+    <path d="M780,770 C900,760 1050,770 1180,765" stroke="#0f172a" stroke-width="2" fill="none" opacity="0.6" />
+    <path d="M810,750 C920,745 1020,750 1140,745" stroke="#0f172a" stroke-width="1.5" fill="none" opacity="0.6" />
+  </g>
+
+  <!-- Dust motes floating in the shaft of light -->
+  <g fill="#bae6fd" opacity="0.25">
+    <circle cx="500" cy="350" r="2.5" />
+    <circle cx="550" cy="400" r="1.5" />
+    <circle cx="680" cy="500" r="2" />
+    <circle cx="750" cy="620" r="3" />
+    <circle cx="820" cy="710" r="1.8" />
+    <circle cx="910" cy="800" r="2.2" />
+    <circle cx="600" cy="220" r="1" />
+  </g>
+
+  <!-- Forensic Noise Overlay -->
+  <rect width="100%" height="100%" fill="#fff" opacity="0.05" filter="url(#noiseFilter)" />
+
+  <!-- Vignette -->
+  <rect width="100%" height="100%" fill="none" stroke="#020305" stroke-width="100" opacity="0.95" />
+
+  <!-- Integrated Signature -->
+  <text x="1870" y="1030" text-anchor="end" font-family="'Amiri', serif" font-style="italic" font-size="20" fill="#cbd5e1" opacity="0.25">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Room shadows -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0c0f16" />
+      <stop offset="100%" stop-color="#030406" />
+    </radialGradient>
+
+    <!-- Cone of light from hanging bulb -->
+    <linearGradient id="lightCone" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#e0a96d" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#e0a96d" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#e0a96d" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Floor shadow for the chair -->
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Forensic Noise Filter -->
+    <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="4" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.055 0" />
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Base Room Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <!-- Back wall line (subtle) -->
+  <line x1="-100" y1="700" x2="2020" y2="700" stroke="#0f172a" stroke-width="2" opacity="0.4" />
+
+  <!-- Cone of Light (Interrogation Spotlight) -->
+  <polygon points="960,0 600,1080 1320,1080" fill="url(#lightCone)" />
+  <ellipse cx="960" cy="1000" rx="360" ry="80" fill="url(#lightCone)" opacity="0.5" />
+
+  <!-- Shadow under the chair -->
+  <ellipse cx="960" cy="850" rx="160" ry="35" fill="url(#floorShadow)" />
+
+  <!-- Hanging Wire and Bulb -->
+  <line x1="960" y1="0" x2="960" y2="350" stroke="#1e293b" stroke-width="3" />
+  <!-- Bulb element -->
+  <circle cx="960" cy="355" r="8" fill="#e0a96d" />
+  <circle cx="960" cy="355" r="22" fill="#fff" opacity="0.15" filter="blur(5px)" />
+  <circle cx="960" cy="355" r="45" fill="#e0a96d" opacity="0.1" filter="blur(15px)" />
+
+  <!-- Empty Interrogation Chair (Metaphor of Vacancy and Absence) -->
+  <g id="chair" stroke="#000" stroke-width="4" fill="none" opacity="0.9">
+    <!-- Backrest frame -->
+    <path d="M915,580 L915,700 L1005,700 L1005,580 Z" fill="#090d14" stroke="#1e293b" stroke-width="3" />
+    <!-- Back slats -->
+    <line x1="935" y1="585" x2="935" y2="695" stroke="#1e293b" stroke-width="2" />
+    <line x1="960" y1="585" x2="960" y2="695" stroke="#1e293b" stroke-width="2" />
+    <line x1="985" y1="585" x2="985" y2="695" stroke="#1e293b" stroke-width="2" />
+    
+    <!-- Seat -->
+    <polygon points="900,700 895,730 1025,730 1020,700" fill="#0b0f19" stroke="#1e293b" stroke-width="4" />
+
+    <!-- Legs (Front Left) -->
+    <line x1="905" y1="730" x2="895" y2="860" stroke="#1e293b" stroke-width="4" />
+    <!-- Legs (Front Right) -->
+    <line x1="1015" y1="730" x2="1025" y2="860" stroke="#1e293b" stroke-width="4" />
+    <!-- Legs (Back Left) -->
+    <line x1="920" y1="700" x2="915" y2="830" stroke="#0f172a" stroke-width="3" />
+    <!-- Legs (Back Right) -->
+    <line x1="1000" y1="700" x2="1005" y2="830" stroke="#0f172a" stroke-width="3" />
+
+    <!-- Stretchers (Braces between legs) -->
+    <line x1="900" y1="790" x2="1020" y2="790" stroke="#0f172a" stroke-width="2" />
+    <line x1="915" y1="810" x2="1005" y2="810" stroke="#0f172a" stroke-width="1.5" />
+  </g>
+
+  <!-- Floating dust particles (Highlighted in the light cone) -->
+  <g fill="#e0a96d" opacity="0.3">
+    <circle cx="910" cy="420" r="1.5" />
+    <circle cx="980" cy="460" r="2.5" />
+    <circle cx="930" cy="510" r="1.2" />
+    <circle cx="890" cy="580" r="2" />
+    <circle cx="1010" cy="540" r="1.5" />
+    <circle cx="950" cy="390" r="1" />
+    <circle cx="1040" cy="470" r="2.2" />
+  </g>
+
+  <!-- Noise Overlay for forensic texture -->
+  <rect width="100%" height="100%" fill="#fff" opacity="0.05" filter="url(#noiseFilter)" />
+
+  <!-- Vignette -->
+  <rect width="100%" height="100%" fill="none" stroke="#030406" stroke-width="100" opacity="0.9" />
+
+  <!-- Integrated Signature -->
+  <text x="1870" y="1030" text-anchor="end" font-family="'Amiri', serif" font-style="italic" font-size="20" fill="#cbd5e1" opacity="0.25">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</text>
+</svg>

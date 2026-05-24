@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background: Dark wooden archival table -->
+    <radialGradient id="tableGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#14110f" />
+      <stop offset="60%" stop-color="#0c0a09" />
+      <stop offset="100%" stop-color="#040303" />
+    </radialGradient>
+    
+    <!-- Warm desk lamp spotlight -->
+    <radialGradient id="deskLamp" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#ca8a04" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#ca8a04" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Cool ambient blue light -->
+    <radialGradient id="coolAmbient" cx="80%" cy="80%" r="70%">
+      <stop offset="0%" stop-color="#0c4a6e" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0c4a6e" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Manila folder paper gradient -->
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9c3b0" />
+      <stop offset="50%" stop-color="#c5ae9a" />
+      <stop offset="100%" stop-color="#a8927e" />
+    </linearGradient>
+
+    <!-- Forensic Noise Filter (Aged paper, dust, wood grain) -->
+    <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="4" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.07 0" />
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Base wooden table background -->
+  <rect width="100%" height="100%" fill="url(#tableGrad)" />
+  
+  <!-- Desk Lamp Glow & Ambient light -->
+  <rect width="100%" height="100%" fill="url(#deskLamp)" />
+  <rect width="100%" height="100%" fill="url(#coolAmbient)" />
+
+  <!-- Wooden grain textures (Horizontal lines) -->
+  <g stroke="#000" stroke-width="2" opacity="0.15">
+    <line x1="0" y1="150" x2="1920" y2="150" />
+    <line x1="0" y1="300" x2="1920" y2="300" />
+    <line x1="0" y1="450" x2="1920" y2="450" />
+    <line x1="0" y1="600" x2="1920" y2="600" />
+    <line x1="0" y1="750" x2="1920" y2="750" />
+    <line x1="0" y1="900" x2="1920" y2="900" />
+  </g>
+
+  <!-- Archival Folder (Dossier) lying on the desk -->
+  <g id="dossier-folder" transform="rotate(-6, 960, 540)">
+    <!-- Shadow under folder -->
+    <path d="M570,220 L1370,220 L1340,840 L540,840 Z" fill="#000" opacity="0.8" filter="blur(20px)" />
+
+    <!-- Back Page of Folder -->
+    <path d="M560,205 L1360,205 L1330,825 L530,825 Z" fill="#bfae9e" stroke="#8c7868" stroke-width="2" />
+
+    <!-- Manila Folder Cover (with tab) -->
+    <path d="M550,210 L1150,210 L1180,240 L1350,240 L1320,830 L520,830 Z" fill="url(#paperGrad)" stroke="#9c8776" stroke-width="3" />
+
+    <!-- Stamped Red Archival Text in Arabic ("سري للغاية" / "ملف التحقيق") -->
+    <g fill="#991b1b" font-family="'Amiri', serif" font-weight="bold" opacity="0.75" transform="rotate(5, 750, 350)">
+      <!-- Red stamp frame -->
+      <rect x="700" y="320" width="220" height="70" fill="none" stroke="#991b1b" stroke-width="4" stroke-dasharray="200, 5" rx="3" />
+      <text x="810" y="365" text-anchor="middle" font-size="28" letter-spacing="1">سري للغاية</text>
+    </g>
+
+    <!-- Archival Registration Numbers and Labels -->
+    <g fill="#1e293b" font-family="monospace" font-size="14" opacity="0.8">
+      <text x="590" y="270">CASE NO: SY-SD-2011-089</text>
+      <text x="590" y="300">SUBJECT: MILITARY DETENTION RECORDS</text>
+      <text x="590" y="330">DEPT: GENERAL SECURITY BRANCH</text>
+      
+      <!-- Hand-written Arabic text representing file labeling ("محاضر صيدنايا") -->
+      <text x="590" y="440" font-family="'Amiri', serif" font-size="36" font-weight="bold" fill="#0f172a">ملف التحقيق والمساءلة</text>
+      <text x="590" y="490" font-family="'Amiri', serif" font-size="22" fill="#334155">الذاكرة الجنائية والمحاكمات الصورية</text>
+    </g>
+
+    <!-- Blueprint scale / ruler printed on folder -->
+    <g stroke="#334155" stroke-width="1.5" opacity="0.6">
+      <line x1="590" y1="780" x2="1280" y2="780" />
+      <!-- Tick marks -->
+      <line x1="590" y1="780" x2="590" y2="795" />
+      <line x1="690" y1="780" x2="690" y2="790" />
+      <line x1="790" y1="780" x2="790" y2="790" />
+      <line x1="890" y1="780" x2="890" y2="795" />
+      <line x1="990" y1="780" x2="990" y2="790" />
+      <line x1="1090" y1="780" x2="1090" y2="790" />
+      <line x1="1190" y1="780" x2="1190" y2="790" />
+      <line x1="1280" y1="780" x2="1280" y2="795" />
+    </g>
+    <text x="935" y="812" fill="#334155" font-family="monospace" font-size="12" opacity="0.6" text-anchor="middle">FORENSIC RECORD SCALE (MM)</text>
+  </g>
+
+  <!-- Forensic Ageing & Dust particles overlay -->
+  <rect width="100%" height="100%" fill="#fff" opacity="0.05" filter="url(#noiseFilter)" />
+
+  <!-- Vignette -->
+  <rect width="100%" height="100%" fill="none" stroke="#000" stroke-width="100" opacity="0.9" />
+
+  <!-- Integrated Signature -->
+  <text x="1870" y="1030" text-anchor="end" font-family="'Amiri', serif" font-style="italic" font-size="20" fill="#cbd5e1" opacity="0.25">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</text>
+</svg>

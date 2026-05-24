@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients (Heavily textured concrete/slate) -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0f121a" />
+      <stop offset="50%" stop-color="#07090d" />
+      <stop offset="100%" stop-color="#020305" />
+    </radialGradient>
+    
+    <!-- Cool ambient blue/grey spotlight -->
+    <radialGradient id="spotlight" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Forensic Noise Filter (Simulating cement decay and film grain) -->
+    <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.08 0" />
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Base Slate Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#spotlight)" />
+
+  <!-- Subtle concrete surface irregularities (scuffs and cracks) -->
+  <g stroke="#030406" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M-50,600 Q400,620 900,580 T1970,640" />
+    <path d="M200,100 L300,150 L280,250" opacity="0.2" />
+    <path d="M1500,800 Q1600,750 1700,900" opacity="0.3" />
+  </g>
+  <g stroke="#334155" stroke-width="1" fill="none" opacity="0.2">
+    <path d="M-50,601 Q400,621 900,581 T1970,641" />
+  </g>
+
+  <!-- Heavy forensic aging overlay -->
+  <rect width="100%" height="100%" fill="#fff" opacity="0.06" filter="url(#noiseFilter)" />
+
+  <!-- Vignette -->
+  <rect width="100%" height="100%" fill="none" stroke="#000" stroke-width="120" opacity="0.95" />
+
+  <!-- Integrated Signature -->
+  <text x="1870" y="1030" text-anchor="end" font-family="'Amiri', serif" font-style="italic" font-size="20" fill="#cbd5e1" opacity="0.25">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻🇦𝓶𝓪𝓱</text>
+</svg>

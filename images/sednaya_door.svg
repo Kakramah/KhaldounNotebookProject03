@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Rusted iron base gradient -->
+    <radialGradient id="doorMetal" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1c1f24" />
+      <stop offset="60%" stop-color="#14161a" />
+      <stop offset="100%" stop-color="#0a0b0d" />
+    </radialGradient>
+    
+    <!-- Warm amber peephole light leak -->
+    <radialGradient id="peepholeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#ea580c" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Rusted metallic shading -->
+    <linearGradient id="rustShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c2d12" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#451a03" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Forensic Noise Filter (Metallic corrosion texture) -->
+    <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.12 0" />
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Base Iron Door -->
+  <rect width="100%" height="100%" fill="url(#doorMetal)" />
+  <rect width="100%" height="100%" fill="url(#rustShade)" />
+
+  <!-- Iron Door Seams & Rivets -->
+  <g stroke="#050507" stroke-width="8">
+    <line x1="960" y1="-10" x2="960" y2="1090" /> <!-- Vertical panel joint -->
+    <line x1="-10" y1="540" x2="1930" y2="540" /> <!-- Horizontal joint -->
+  </g>
+  <g stroke="#2d3748" stroke-width="2" opacity="0.3">
+    <line x1="964" y1="-10" x2="964" y2="1090" />
+    <line x1="-10" y1="544" x2="1930" y2="544" />
+  </g>
+
+  <!-- Rivets / Bolts on the door -->
+  <g fill="#1a202c" stroke="#050507" stroke-width="3" opacity="0.8">
+    <!-- Panel A Rivets -->
+    <circle cx="100" cy="100" r="16" />
+    <circle cx="100" cy="980" r="16" />
+    <circle cx="860" cy="100" r="16" />
+    <circle cx="860" cy="980" r="16" />
+    
+    <!-- Panel B Rivets -->
+    <circle cx="1060" cy="100" r="16" />
+    <circle cx="1060" cy="980" r="16" />
+    <circle cx="1820" cy="100" r="16" />
+    <circle cx="1820" cy="980" r="16" />
+  </g>
+  
+  <!-- Rivet Highlights -->
+  <g fill="#4a5568" opacity="0.2">
+    <circle cx="98" cy="98" r="8" />
+    <circle cx="98" cy="978" r="8" />
+    <circle cx="858" cy="98" r="8" />
+    <circle cx="858" cy="978" r="8" />
+    <circle cx="1058" cy="98" r="8" />
+    <circle cx="1058" cy="978" r="8" />
+    <circle cx="1818" cy="98" r="8" />
+    <circle cx="1818" cy="978" r="8" />
+  </g>
+
+  <!-- Closed Peephole Hatch (العصّاصة) -->
+  <g id="peephole-hatch" transform="translate(960, 540)">
+    <!-- Shadow under Hatch frame -->
+    <rect x="-180" y="-120" width="360" height="240" fill="#000" opacity="0.9" filter="blur(15px)" />
+
+    <!-- Peephole Iron Frame -->
+    <rect x="-160" y="-100" width="320" height="200" fill="#181a20" stroke="#050608" stroke-width="6" rx="10" />
+    <rect x="-140" y="-80" width="280" height="160" fill="#0c0d12" stroke="#050608" stroke-width="4" rx="6" />
+
+    <!-- Open Sliding shutter - partially slid open revealing light leak -->
+    <g transform="translate(40, 0)">
+      <!-- Light leak behind the shutter -->
+      <ellipse cx="-100" cy="0" rx="40" ry="25" fill="#f97316" filter="blur(1px)" />
+      <ellipse cx="-100" cy="0" rx="90" ry="60" fill="url(#peepholeGlow)" />
+      
+      <!-- Inside bars of peephole (subtle) -->
+      <line x1="-115" y1="-22" x2="-115" y2="22" stroke="#050608" stroke-width="5" />
+      <line x1="-100" y1="-25" x2="-100" y2="25" stroke="#050608" stroke-width="5" />
+      <line x1="-85" y1="-22" x2="-85" y2="22" stroke="#050608" stroke-width="5" />
+
+      <!-- Iron sliding hatch cover itself -->
+      <rect x="-70" y="-75" width="190" height="150" fill="#13151b" stroke="#050608" stroke-width="4" rx="4" />
+      <!-- Shutter handle -->
+      <rect x="50" y="-30" width="20" height="60" fill="#0a0b0f" stroke="#050608" stroke-width="3" rx="2" />
+      <circle cx="60" cy="0" r="4" fill="#2d3748" />
+    </g>
+
+    <!-- Rusted bolts holding the frame -->
+    <circle cx="-130" cy="-70" r="10" fill="#050608" />
+    <circle cx="130" cy="-70" r="10" fill="#050608" />
+    <circle cx="-130" cy="70" r="10" fill="#050608" />
+    <circle cx="130" cy="70" r="10" fill="#050608" />
+  </g>
+
+  <!-- Heavy corrosion, scratches, rust scale textures overlay -->
+  <rect width="100%" height="100%" fill="#fff" opacity="0.08" filter="url(#noiseFilter)" />
+
+  <!-- Vignette -->
+  <rect width="100%" height="100%" fill="none" stroke="#000" stroke-width="120" opacity="0.9" />
+
+  <!-- Integrated Signature -->
+  <text x="1870" y="1030" text-anchor="end" font-family="'Amiri', serif" font-style="italic" font-size="20" fill="#cbd5e1" opacity="0.25">@𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓐𝓴𝓻𝓪𝓶𝓪𝓱</text>
+</svg>
